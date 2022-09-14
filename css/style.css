@@ -1,0 +1,290 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #22272A;
+  padding-top: 80px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn{
+  display: inline-block;
+  background-color: #fff;
+  color: #22272A;
+  padding: 8px 15px;
+  font-size: .9rem;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.btn.big{
+  font-size: 20px;
+  padding: 15px 35px;
+}
+
+.btn.dark{
+  background-color: #22272A;
+  color: white;
+}
+
+.btn.colored{
+  background-color: #8EA1E1;
+  color: white;
+}
+
+.btn:hover{
+  color: #618CF7;
+}
+
+.btn i{
+  font-size: .95rem;
+}
+
+.title-stars{
+  font-size: 30px;
+  background-image: url('../img/stars.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.wave svg{
+  color: #F6F6F6;
+  display: block;
+}
+.wave.down{
+  transform: rotate(180deg);
+  margin-top: -50px;
+}
+
+/* HEADER */
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #3061e0;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menu ul{
+  list-style: none;
+  display: flex;
+  padding-top: 5px;
+}
+
+header .menu ul li{
+  margin: 0 17px;
+}
+
+header .menu ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+header .menu ul li a:hover{
+  text-decoration: underline;
+}
+
+/* JUMBO */
+.jumbotron{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  background-color: #3061e0;
+  background-image: url('../img/jumbo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron .content{
+  width: 90%;
+  max-width: 800px;
+  color: white;
+  text-align: center;
+
+}
+
+.jumbotron .content h1{
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.jumbotron .content p{
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.jumbotron .content .buttons .btn:first-child{
+  margin-right: 25px;
+}
+
+/* MAIN */
+
+main{
+  padding-top: 50px;
+}
+
+section{
+  margin-bottom: 50px;
+}
+
+section.bg-grey{
+  background-color: #F6F6F6;
+}
+
+section .container{
+  display:flex;
+}
+
+section .container .image{
+  width: 60%;
+
+}
+
+section .container .text{
+  width: 40%;
+  padding: 40px 60px 0;
+}
+
+section .container .text h2{
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+section .container .text p{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+section.section-bottom .container{
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0 84px;
+}
+
+section.section-bottom .box-text h2{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+section.section-bottom .box-text p{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section.section-bottom .cta .title-stars{
+  margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #24272A;
+  color: white;
+  padding-top: 120px;
+}
+
+footer h3, footer h4{
+  color: #7289DA;
+}
+
+footer h3{
+  font-size: 35px;
+}
+
+.footer-top{
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #7289DA;
+}
+
+.footer-top .col-social{
+  width: calc(100% / 3);
+  padding-right: 30px;
+}
+
+.footer-top .col-social h3{
+  margin-bottom: 30px;
+}
+
+.footer-top .col-social .lang{
+  margin-bottom: 30px;
+}
+
+.footer-top .col-social .lang img{
+  width: 25px;
+  vertical-align: middle;
+}
+
+.footer-top .col-social .lang{
+  font-size: .8rem;
+}
+
+.footer-top .col-social .lang i{
+  font-size: .7rem;
+}
+
+.footer-top .col-social .icons i{
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-top .col-menu{
+  width: calc(100% / 6);
+}
+
+.footer-top .col-menu h4{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-top .col-menu ul{
+  list-style: none;
+}
+
+.footer-top .col-menu ul li{
+  padding-bottom: 15px;
+}
+
+.footer-top .col-menu ul a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-top .col-menu ul a:hover{
+  text-decoration: underline;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
